@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def magic_calculation(a, b):
     """does exactly the same as the code provided"""
-   add, sub =  __import__ ("magic_calculation_102", globals(), locals(), ['add', 'sub'], 0)
+    from calculator_1 import add, sub
 
     if a < b:
         c = add(a, b)
