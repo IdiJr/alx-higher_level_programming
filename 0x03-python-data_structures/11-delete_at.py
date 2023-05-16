@@ -3,6 +3,6 @@ def delete_at(my_list=[], idx=0):
     length = len(my_list)
 
     """Deletes an item at a specific position in a list."""
-    if idx >= 0 and idx < length:
+    if idx <= 0 and idx < length:
         del my_list[idx]
         return (my_list)
