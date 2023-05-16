@@ -11,16 +11,16 @@ int is_palindrome(listint_t **head);
  */
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *current = *head, *next, *previous = NULL;
+	listint_t *curr = *head, *next, *pre = NULL;
 
-	while (current)
+	while (curr)
 	{
-		next = current->next;
-		current->next = previous;
-		previous = current;
-		current = next;
+		next = curr->next;
+		curr->next = pre;
+		pre = curr;
+		curr = next;
 	}
-	*head = previous;
+	*head = pre;
 	return (*head);
 }
 
