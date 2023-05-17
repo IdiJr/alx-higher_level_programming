@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
+
 def to_subtract(list_num):
     max_list = max(list_num)
     return max_list - sum(n for n in list_num if max_list > n)
+
 
 def roman_to_int(roman_string):
     if not roman_string or not isinstance(roman_string, str):
