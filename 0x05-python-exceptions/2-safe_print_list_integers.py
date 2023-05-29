@@ -2,13 +2,13 @@
 
 def safe_print_list_integers(my_list=[], x=0):
     printed = 0
-    try:
-        for index in my_list[:x]:
-            if isinstance(index, int):
-                print("{:d}".format(index), end="")
-                printed += 1
-                print()
-    except (TypeError):
-        pass
 
-        return (printed)
+    try:
+        for i in range(x):
+            if isinstance(my_list[i], int):
+                print("{:d}".format(my_list[i]), end="")
+                printed += 1
+    except (TypeError, ValueError):
+        pass
+    print()
+    return (printed)
