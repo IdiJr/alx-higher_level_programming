@@ -5,8 +5,7 @@
 class Rectangle:
 
     def __init__(self, width=0, height=0):
-        self.__width = 0
-        self.__height = 0
+
         self.width = width
         self.height = height
 
@@ -37,6 +36,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
-    def __str__(self):
-        return "{{'_Rectangle__height': {:d}, '_Rectangle__width': {:d}}}".format(self.__height, self.__width)
