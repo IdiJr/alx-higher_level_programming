@@ -1,4 +1,4 @@
-# 0x06. Python - Classes and Objects
+# 0x08. Python - Classes and Objects
 This project contains tasks performed to learn:
 * What OOP is, classes, objects and instance, attribute and how to use public, protected and private attributes.
 * What is `self`, a method, special `__init__` method and how it is used.
