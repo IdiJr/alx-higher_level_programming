@@ -4,8 +4,8 @@
 def say_my_name(first_name, last_name=""):
     """Return: the first and last name
     Args:
-    Arg1: type str first name
-    Arg2: type str last name
+        Arg1: type str first name
+        Arg2: type str last name
     Raise: TypeError
     """
     if not isinstance(first_name, str):
