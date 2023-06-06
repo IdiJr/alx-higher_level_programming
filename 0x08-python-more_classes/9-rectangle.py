@@ -17,7 +17,7 @@ class Rectangle:
         Args:
             width (int): The width of the new rectangle
             height (int): The height of the new rectangle
-            """
+        """
         self.width = width
         self.height = height
         type(self).number_of_instances += 1
@@ -32,7 +32,7 @@ class Rectangle:
         Args:
             rect_1 (Rectangle): The first rectangle
             rect_2 (Rectangle): The second rectangle
-            Raises:
+        Raises:
                 TypeError: If either rect_1 or rect_2 is not a Rectangle.
         """
         if not isinstance(rect_1, Rectangle):
@@ -59,7 +59,7 @@ class Rectangle:
 
     @property
     def width(self):
-    """gets/sets the width of the rectangle"""
+        """gets/sets the width of the rectangle"""
         return self.__width
 
     @width.setter
