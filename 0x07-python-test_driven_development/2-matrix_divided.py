@@ -4,8 +4,8 @@
 def matrix_divided(matrix, div):
     """Divide all elements in a matrix
     Args:
-    Arg1: matrix type list
-    Arg2: div type int or float
+        Arg1: matrix type list
+        Arg2: div type int or float
     Return: new matrix after division calculated
     Raise: TypeError, ZeroError
     """
