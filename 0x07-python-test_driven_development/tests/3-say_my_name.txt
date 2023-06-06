@@ -1,0 +1,57 @@
+======================
+3-say_my_name
+======================
+
+Say my name module used to test the say_my_name function
+
+=====================
+
+Import the function:
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Pass cases:
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+
+    >>> say_my_name("Walter", "White")
+    My name is Walter White
+
+    >>> say_my_name("Lancelot", "Luropichka")
+    My name is Lancelot Luropichka
+
+Test for when only one arg is inputed:
+    >>> say_my_name("Bob")
+    My name is Bob
+
+TypeError for an int is inputed as the first name: 
+    >>> say_my_name(12, "White")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+TypeError for an int is inputed as the last name:
+    >>> say_my_name("White", 1789)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+TypeError for when a list, tuple or dict is either first or last name:
+    >>> say_my_name({"Lancelot: 3", "Luropichka: 0"}, 8)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Lancelot", {"Lancelot: 3", "Luropichka: 0"})
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+    >>> say_my_name({"Lancelot: 3", "Luropichka: 0"}, "Luropichka")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+TypeError for no input:
+    >>> say_my_name()
+    Traceback (most recent call last):
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+TypeError if None is an input:
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string

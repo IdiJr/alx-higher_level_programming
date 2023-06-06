@@ -1,0 +1,58 @@
+======================
+5-text_square
+======================
+
+Print square  module used to test the text_indentation function
+
+=====================
+
+Import the funtion:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    
+    >>> text_indentation("Lorem.")
+    Lorem.
+    <BLANKLINE>
+
+Test with space at the beginning of a line:
+    >>> text_indentation("                  Lorem ipsum dolor sit amet, consectetur adipi
+scing elit.")
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <BLANKLINE>
+
+Test when no argument printed in the string:
+    >>> text_indentation("    ")
+
+Test with spaces at the end of a line
+    >>> text_indentation("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <BLANKLINE>
+    <BLANKLINE>
+
+It also works when there are spaces and a new line with the same pattern:
+
+    >>> text_indentation("    illud quidem.    nihil dolere.   ")
+    illud quidem.
+    <BLANKLINE>
+    nihil dolere.
+    <BLANKLINE>
+
+Test with newline(\n):
+    >>> text_indentation("Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n")
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <BLANKLINE>
+    <BLANKLINE>
+
+    >>> text_indentation("\nLorem ipsum dolor sit amet, consectetur adipiscing elit.")
+    <BLANKLINE>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <BLANKLINE>
+
+TypeError for when an integer is used:
+    >>> text_indentation(4)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+TypeError for when None used as input:
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
