@@ -29,8 +29,7 @@ Pass cases:
     ##########
 
     >>> print("")
-
-    >>>
+    <BLANKLINE>
 
 Test with 0, works but prints nothing:
     >>> print_square(0)
@@ -58,7 +57,7 @@ TypeError for when a string is used as input:
     Traceback (most recent call last):
     TypeError: size must be an integer
 
-TyeError when no argument is added
+TyeError when no argument is added:
     >>> print_square()
     Traceback (most recent call last):
     TypeError: print_square() missing 1 required positional argument: 'size'

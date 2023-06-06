@@ -8,28 +8,21 @@ Print square  module used to test the text_indentation function
 
 Import the funtion:
     >>> text_indentation = __import__('5-text_indentation').text_indentation
-    
+
     >>> text_indentation("Lorem.")
     Lorem.
     <BLANKLINE>
 
-Test with space at the beginning of a line:
-    >>> text_indentation("                  Lorem ipsum dolor sit amet, consectetur adipi
-scing elit.")
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    >>> text_indentation("    Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     <BLANKLINE>
 
-Test when no argument printed in the string:
     >>> text_indentation("    ")
-
-Test with spaces at the end of a line
     >>> text_indentation("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     <BLANKLINE>
-    <BLANKLINE>
 
-It also works when there are spaces and a new line with the same pattern:
-
+It also works when there are spaces before, within and at the end:
     >>> text_indentation("    illud quidem.    nihil dolere.   ")
     illud quidem.
     <BLANKLINE>
