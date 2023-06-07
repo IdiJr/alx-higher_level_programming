@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 class LockedClass:
-    """Class lockclass"""
+    """Define the allowed attribute as a class-level"""
     __slots__ = ["first_name"]
