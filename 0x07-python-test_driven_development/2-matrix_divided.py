@@ -3,11 +3,7 @@
 
 def matrix_divided(matrix, div):
     """Divide all elements in a matrix
-    Args:
-        Arg1: matrix type list
-        Arg2: div type int or float
-    Return: new matrix after division calculated
-    Raise: TypeError, ZeroError
+    Return: a new matrix after division of a matrix of integers are calculated
     """
 
     if (not isinstance(matrix, list) or matrix == [] or
