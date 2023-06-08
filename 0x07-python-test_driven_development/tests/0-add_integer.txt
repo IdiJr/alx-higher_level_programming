@@ -8,6 +8,15 @@ Add integer module used to test the add_integer function
 Import the function:
 	>>> add_integer = __import__('0-add_integer').add_integer
 
+check module doc:
+	add_integer = __import__('0-add_integer').add_integer
+	>>> mod_doc = __import__('0-add_integer').__doc__
+	>>> len('mod_doc') > 1
+	True
+	>>> func_doc = __import__('0-add_integer').add_integer.__doc__
+	>>> len('func_doc') > 1
+	True
+
 Pass cases:
     >>> add_integer(1, 2)
     3
