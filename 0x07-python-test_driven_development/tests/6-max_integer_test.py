@@ -2,10 +2,14 @@
 """Unittest for max_integer([...]) 
 """
 import unittest
+
+
 max_integer = __import__('6-max_integer').max_integer
+
 
 class TestMaxInteger(unittest.TestCase):
     """Class unittest for the max integer function"""
+
 
     def test_sorted_list(self):
         sorted_list = [1, 2, 3, 4]
@@ -27,4 +31,4 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer(""), None)
 
 if __name__ == '__main__':
-        unittest.main()
+    unittest.main()
