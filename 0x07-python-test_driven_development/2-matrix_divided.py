@@ -3,7 +3,7 @@
 
 
 def matrix_divided(matrix, div):
-    """Divide all elements in a matrix
+    """Divides all elements in a matrix
     Return: a new matrix after division of a matrix of integers are calculated
     """
 
