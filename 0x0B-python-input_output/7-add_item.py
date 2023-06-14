@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""function that adds all arguments to a Python list and then save them to a file"""
+"""
+function that adds all arguments to a Python list,
+and then save them to a file
+"""
 import sys
 
 
