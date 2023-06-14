@@ -6,27 +6,33 @@ if __name__ == "__main__":
     import sys
 
     size = 0
-    statuscd = {}
+    status_codes = {}
 
-    while True:
-        try:
+try:
+    counter = 0
+    for line in sys.stdin:
+        line = line.split()
+
+        size += int(line[8])
+        status_code = line[7]
+
+        if status_code in status_codes:
+            status_codes[status_code] += 1
+        else:
+            status_codes[status_code] = 1
+
+        counter += 1
+
+        if counter == 10:
+            print("Total file size: {}".format(size))
+            for code in sorted(status_codes.keys()):
+                print("{}: {}".format(code, status_codes[code]))
             counter = 0
-            for line in sys.stdin:
-                line = line.split()
 
-                size += int(line[8])
-                if statuscd.get(line[7], -1) == -1:
-                    statuscd[line[7]] = 1
-                else:
-                    statuscd[line[7]] += 1
+except KeyboardInterrupt:
+    pass
 
-                if counter == 10:
-                    break
-                counter += 1
-
-        except KeyboardInterrupt:
-            exit()
-        finally:
-            print("File size: {}".format(size))
-            for key in sorted(statuscd):
-                print("{}: {}".format(key, statuscd[key]))
+finally:
+    print("File size: {}".format(size))
+    for key in sorted(statuscd):
+        print("{}: {}".format(key, statuscd[key]))
