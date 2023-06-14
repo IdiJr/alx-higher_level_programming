@@ -31,7 +31,7 @@ class Student:
     def reload_from_json(self, json):
         """Replaces all attributes of the student.
         Args:
-            json(dict): the pairs to replace attributes with
+            json(dict): the pairs to replace attributes with.
         """
         for i, j in json.items():
             setattr(self, i, j)
