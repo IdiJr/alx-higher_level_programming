@@ -24,7 +24,7 @@ try:
         counter += 1
 
         if counter == 10:
-            print("Total file size: {}".format(size))
+            print("File size: {}".format(size))
             for code in sorted(status_codes.keys()):
                 print("{}: {}".format(code, status_codes[code]))
             counter = 0
