@@ -15,7 +15,7 @@ class Testsqr_instances(unittest.TestCase):
         with self.assertRaises(TypeError):
             Square()
 
-    def test_issqr2(self):
+    def test_issqr1(self):
         self.assertIsInstance(Square(10), Square)
 
 
@@ -26,7 +26,7 @@ class Testsqr_instances(unittest.TestCase):
     def test_sz_getter(self):
         self.assertEqual(10, Square(10, 7, 8, 4).size)
 
-    def test_s_setter(self):
+    def test_sz_setter(self):
         sqr = Square(10, 7, 8, 2)
         sqr.size = 10
         self.assertEqual(10, sqr.size)

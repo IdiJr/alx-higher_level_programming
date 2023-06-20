@@ -34,7 +34,7 @@ class Testbase_instances(unittest.TestCase):
             print(Base(5).__nb_instances)
 
     def test_str(self):
-        self.assertEqual("tequila", Base("tequila").id)
+        self.assertEqual("string", Base("string").id)
 
     def test_float(self):
         self.assertEqual(3.1, Base(3.1).id)

@@ -73,23 +73,23 @@ class Testrec_instances(unittest.TestCase):
 
     def test_two_arg(self):
         rec = Rectangle(10, 7)
-        rec2 = Rectangle(4, 8)
-        self.assertNotEqual(rec.id, rec2.id)
+        rec1 = Rectangle(4, 8)
+        self.assertNotEqual(rec.id, rec1.id)
 
     def test_three_arg(self):
         rec = Rectangle(10, 7, 2)
-        rec2 = Rectangle(4, 8, 1)
-        self.assertNotEqual(rec.id, rec2.id)
+        rec1 = Rectangle(4, 8, 1)
+        self.assertNotEqual(rec.id, rec1.id)
 
     def test_four_arg(self):
         rec = Rectangle(10, 7, 2, 8)
-        rec2 = Rectangle(4, 2, 1, 3)
-        self.assertNotEqual(rec.id, rec2.id)
+        rec1 = Rectangle(4, 2, 1, 3)
+        self.assertNotEqual(rec.id, rec1.id)
 
     def test_five_arg(self):
         rec = Rectangle(10, 7, 2, 8, 4)
-        rec2 = Rectangle(4, 2, 1, 3, 7)
-        self.assertNotEqual(rec.id, rec2.id)
+        rec1 = Rectangle(4, 2, 1, 3, 7)
+        self.assertNotEqual(rec.id, rec1.id)
 
     def test_six_arg(self):
         with self.assertRaises(TypeError):
