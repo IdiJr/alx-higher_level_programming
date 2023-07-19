@@ -1,4 +1,7 @@
 # 0x0D SQL - Introduction :snake:
+
+> SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system, or for stream processing in a relational data stream management system. This project covers the part 2 of SQL. The purpose of these SQL projects is to gain skills to manipulate SQL along Python to enhance the data engineering
+
 This project contains tasks performed to learn the following:
   
 * What’s a database
