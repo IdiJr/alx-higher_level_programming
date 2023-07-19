@@ -1,5 +1,5 @@
 -- lists all shows in db hbtn_0d_tvshows
--- and should tv_shows.title and tv_show_genres.genre_id
+-- and should show tv_shows.title and tv_show_genres.genre_id
 -- must be sorted by tv_shows.title and tv_show_genres.genre_id
 -- shows without genre displays NULL
 SELECT tv_shows.title, tv_show_genres.genre_id
