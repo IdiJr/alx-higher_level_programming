@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 Lists all cities from the database `hbtn_0e_0_usa`
-in with name startig with N.
 """
 import sys
 import MySQLdb
