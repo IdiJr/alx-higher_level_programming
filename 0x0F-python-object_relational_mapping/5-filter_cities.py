@@ -9,7 +9,7 @@ import MySQLdb
 if __name__ == "__main__":
     """
     Accesses the database
-    Return: all cities in hbtn_0e_0_usa
+    Return: all cities filtered by states in hbtn_0e_0_usa
     """
     db = MySQLdb.connect(
         host='localhost',
@@ -24,5 +24,4 @@ if __name__ == "__main__":
                 WHERE states.name = %s ORDER BY cities.id", (sys.argv[4],))
     cities = cur.fetchall()
     if cities is not None:
-        for city in cities:
-            print(city)
+        print(",".join([city[1] for city in cities]))
