@@ -24,8 +24,7 @@ if __name__ == "__main__":
                 WHERE states.name = %s ORDER BY cities.id", (state_name,))
 
     cities = cur.fetchall()
-    for city in cities:
-        print(city[0])
 
-    cur.close()
-    db.close()
+    if cities is not None:
+        for city in cities:
+            print(",".join([city[1]]))
