@@ -19,12 +19,6 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    cur.execute("SELECT cities.name FROM cities \
-                JOIN states ON cities.state_id = states.id \
-                WHERE states.name = %s ORDER BY cities.id", (state_name,))
-
-    cities = cur.fetchall()
-
-    if cities is not None:
-        for city in cities:
-            print(",".join([city[1]]))
+    cur.execute("SELECT * FROM cities JOIN states \
+                ON cities.state_id = states.id ORDER BY cities.id")
+    [print(", ".join([c[2] for c in cur.fetchall() if c[4] == sys.argv[4]]))]
