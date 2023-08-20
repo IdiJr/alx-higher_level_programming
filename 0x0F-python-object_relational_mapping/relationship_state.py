@@ -16,6 +16,7 @@ class State(Base):
         __tablename__(str): Table name of the class
         id (int): State id of the class
         name (str): State name of the class
+        cities (:obj: `City`): Cities belonging to the state
     """
     __tablename__ = 'states'
 
