@@ -2,9 +2,10 @@
 """
 Defines the State class and creates the Base instance using SQLAlchemy.
 """
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
-from sqlachemy.orm import relationship
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
+from relationship_city import Base, City
 
 Base = declarative_base()
 
