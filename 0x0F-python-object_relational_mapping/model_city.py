@@ -3,7 +3,7 @@
 Defines the City class and creates the Base instance using SQLAlchemy.
 """
 
-from model_state import Base
+from model_state import Base, State
 from sqlalchemy import Column, Integer, String, ForeignKey
 
 
