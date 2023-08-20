@@ -21,5 +21,5 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for state in session.querry(State).filter(State.name.contain('a')):
+    for state in session.query(State).filter(State.name.contain('a')):
         print("{}: {}".format(state.id, state.name))
