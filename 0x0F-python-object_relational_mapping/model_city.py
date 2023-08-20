@@ -2,10 +2,9 @@
 """
 Defines the City class and creates the Base instance using SQLAlchemy.
 """
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, ForeignKey
 
-Base = declarative_base()
+from model_state import Base
+from sqlalchemy import Column, Integer, String, ForeignKey
 
 
 class City(Base):
