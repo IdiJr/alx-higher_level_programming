@@ -8,7 +8,7 @@ import sys
 import requests
 from requests.auth import HTTPBasicAuth
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     username = sys.argv[1]
     P_A_T = sys.argv[2]
     link = 'https://api.github.com/user'
