@@ -1,4 +1,4 @@
-# 0x14 Javascript - Web scraping :roller_coaster:
+# 0x14 Javascript - Web scraping
 
 This project contains tasks performed to learn the following concepts:
 
