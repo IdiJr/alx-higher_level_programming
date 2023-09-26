@@ -18,3 +18,4 @@ This project contains tasks performed to learn the following concepts:
 8. Script that prints all characters of a Star Wars movie
 
 [![js-semistandard-style](https://raw.githubusercontent.com/standard/semistandard/master/badge.svg)](https://github.com/standard/semistandard)
+[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/standard/semistandard)
