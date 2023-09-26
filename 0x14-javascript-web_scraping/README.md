@@ -16,3 +16,5 @@ This project contains tasks performed to learn the following concepts:
 6. Script that computes the number of tasks completed by user id.
 7. Script that prints all characters of a Star Wars movie
 8. Script that prints all characters of a Star Wars movie
+
+[![js-semistandard-style](https://raw.githubusercontent.com/standard/semistandard/master/badge.svg)](https://github.com/standard/semistandard)
