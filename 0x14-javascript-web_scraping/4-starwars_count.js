@@ -8,9 +8,11 @@ request(link, (err, response, body) => {
     return;
   }
   if (response.statusCode === 200) {
-    const wedgeAntilles = JSON.parse(body).results.filter((film) =>
-      film.characters.includes(`https://swapi-api.alx-tools.com/api/people/${characterId}/`)
-    );
+    let charList = [];
+    for (const film of JSON.parse(body).results) {
+      charList = charList.concat(film.characters);
+    }
+    const wedgeAntilles = charList.filter(x => x.includes(`/${characterId}/`));
     console.log(wedgeAntilles.length);
   }
 });
